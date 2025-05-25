@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baleada Music - AI Blog & Player</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^1.0.1",
+        "marked": "https://esm.sh/marked@^15.0.12"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Baleada Music</h1>
+    </header>
+
+    <main>
+        <section id="blog-section">
+            <h2>Featured Article</h2> <!-- Changed H2 text -->
+            <div id="blog-controls">
+                <button id="generate-post-button" aria-label="Generate new blog post">Generate New AI Post</button> <!-- Clarified button text -->
+            </div>
+            <div id="loading-indicator" style="display: none;" aria-live="polite">Loading AI blog post...</div>
+            <article id="blog-content" aria-live="polite">
+                <div class="mcflurry-article-container">
+                    <h1>The McFlurry Papers</h1>
+                    <div class="subtitle">What a $4 dessert reveals about the architecture of modern colonialism</div>
+                    
+                    <p>I couldn't sleep last night.</p>
+                    
+                    <p>Eduardo García Pallares, President of Nestlé Caribbean Latino, posted a celebration of the new McFlurry ChocoTrio launch in the Dominican Republic. Triple milk chocolate. Made with Nestlé. Big smiles. Corporate partnership. Innovation.</p>
+                    
+                    <p>I stared at that post for hours.</p>
+                    
+                    <p>You see, I spend my days rebuilding what colonialism dismantled. I work with coffee farmers to resurrect pre-colonial trading systems, creating direct bridges between origin countries and global markets. I'm literally trying to return economic equity to the people who grow the world's finest coffees.</p>
+                    
+                    <p><span class="emphasis">That McFlurry represents everything I wake up fighting against.</span></p>
+                    
+                    <h2>The Geography of Extraction</h2>
+                    
+                    <p>Let me show you something. The Dominican Republic isn't just another market for Nestlé - it's their Caribbean headquarters, serving 40 million consumers across 29 territories. Nestlé has operated there for over half a century, with their San Francisco de Macorís facility producing Carnation Milk since 1971.</p>
+                    
+                    <p><span class="emphasis">This isn't coincidence. This is colonial infrastructure.</span></p>
+                    
+                    <p>The Dominican Republic grows some of the world's finest cacao. Instead of building local chocolate industries that could capture the full value of their crops, we get McFlurrys. Instead of value-added processing that creates local wealth, we get raw material extraction. Instead of economic development, we get sugar addiction.</p>
+                    
+                    <p>The farmers who grow the cacao in that McFlurry earn $1-2 per day. The dessert sells for $4. The value-add processing - the branding, the marketing, the profit - all happens in Switzerland, where Nestlé is headquartered alongside the Bank for International Settlements, the colonial center of global finance.</p>
+                    
+                    <h2>The Brand Apartheid</h2>
+                    
+                    <p>Here's what really struck me: you'd never see Nestlé branding that prominent on McDonald's products in North America or Europe. McDonald's protects their brand identity too carefully. But in the Global South? Different rules entirely.</p>
+                    
+                    <p>Northern consumers know Nestlé's reputation - the baby formula scandal in Africa, water privatization, child labor in cocoa supply chains. So McDonald's keeps that partnership quiet up north. You get McFlurrys with generic "chocolate pieces."</p>
+                    
+                    <p>But in the Dominican Republic? Nestlé's name gets equal billing with McDonald's because in these markets, the Swiss brand name carries colonial authority. It signals "quality" and "international standards" to populations conditioned to see their own products as inferior.</p>
+                    
+                    <div class="quote">
+                        "This is psychological colonialism at work. The prominence of
+                        that Nestlé logo is saying: 'We can't get away with this in
+                        markets that know who we really are, so we'll do it where
+                        colonial authority still sells products.'"
+                    </div>
+                    
+                    <h2>The Information Architecture</h2>
+                    
+                    <p>But here's where it gets really interesting. Why don't people in the Dominican Republic know about Nestlé's scandals in Africa? Why don't communities in Brazil hear about similar struggles in Kenya?</p>
+                    
+                    <p>The answer lies in our global information infrastructure - a system that's as colonial as our economic one.</p>
+                    
+                    <p>By the 1980s, four news agencies - AFP, AP, UPI and Reuters - provided over 90% of foreign news printed by newspapers worldwide. 50% of all news in South American papers comes from US agencies, another 10% from Reuters and AFP. Each carved out spheres of influence from old colonial empires.</p>
+                    
+                    <p>Here's the architecture: 34% of these agencies' correspondents are in the US, 28% in European capitals. Only 4% are in Africa, 6% in the Middle East, 11% in Latin America. A single reporter in Delhi covers events "from Kabul to Rangoon - a land mass of five and a half million square kilometers."</p>
+                    
+                    <p><span class="emphasis">News flows UP from Global South to North, but rarely sideways. This isn't accident - it's design.</span> It ensures that communities facing similar challenges never connect, never organize, never build the cross-regional solidarity that could challenge these systems.</p>
+                    
+                    <h2>The Milk Economy</h2>
+                    
+                    <p>Let's talk about that "triple milk" in the McFlurry. Industrial dairy requires massive amounts of land - land that was once food forests, subsistence agriculture, indigenous territory. Now it's pasture for cattle producing milk for foreign corporations while local communities lose food sovereignty.</p>
+                    
+                    <p>Nestlé has spent millions expanding their Dominican dairy operations, purchasing milk from farmers who provide employment for around 4,500 people. But here's the thing - they're not building wealth, they're extracting it. The value-add processing, the branded products, the profit margins all flow back to Switzerland.</p>
+                    
+                    <p><span class="emphasis">This is the colonial model perfected: take raw materials at commodity prices, process them where you control the infrastructure, market the finished products back to the same regions as "innovation."</span></p>
+                    
+                    <h2>The Sugar Intervention</h2>
+                    
+                    <p>That McFlurry isn't just a dessert - it's a health intervention. Create dependency on ultra-processed foods in markets that still have traditional food systems, then extract profit from the resulting medical costs.</p>
+                    
+                    <p><span class="emphasis">This is colonialism with a drive-through window.</span></p>
+                    
+                    <h2>What We're Really Looking At</h2>
+                    
+                    <p>When I see Eduardo's post celebrating this launch, I see the perfect synthesis of everything Switzerland has historically represented: financial control, resource extraction, and the transformation of global commodities into profitable products consumed by the very communities that grew the ingredients.</p>
+                    
+                    <p>The Dominican Republic produces world-class cacao and has the infrastructure to build local chocolate industries. Instead, we get McFlurrys. They have traditional food systems and agricultural knowledge. Instead, we get sugar addiction marketed as progress.</p>
+                    
+                    <p>The infrastructure exists. The quality exists. The market demand exists. The only thing missing is the will to share the value we're currently extracting.</p>
+                    
+                    <div class="final-question">
+                        <h2>The Sunday Question</h2>
+                        
+                        <p>So here's what keeps me up: What would it look like if we actually built supply chains that didn't require poverty to function? What if "innovation" meant partnerships that let producers capture the value their crops actually create?</p>
+                        
+                        <p>What if instead of celebrating another processed launch, we celebrated the farmers who make it all possible?</p>
+                        
+                        <p>The Dominican Republic could be a global leader in sustainable chocolate, traditional foods, agricultural innovation. Instead, we get posts celebrating the very system that keeps them dependent.</p>
+                        
+                        <p><span class="emphasis">That McFlurry represents everything we need to fight, all in a single cup.</span></p>
+                        
+                        <p><strong>The question is: are we brave enough to see it?</strong></p>
+                    </div>
+                    
+                    <div class="byline">
+                        <em>Burke Campbell works in coffee diplomacy, building direct relationships between producers and global markets. He's spent years reconstructing trade systems that center producer sovereignty and quality recognition.</em>
+                    </div>
+                    
+                    <div class="hashtags">
+                        #SupplyChain #FoodSovereignty #CoffeeTrading #GlobalSouth #SustainableAgriculture
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="music-player-section">
+            <h2>Music Player</h2>
+            <div id="player-ui">
+                <label for="folder-selector-input" class="folder-selector-label button-like">Select Music Folder</label>
+                <input type="file" id="folder-selector-input" webkitdirectory directory multiple accept="audio/*" class="visually-hidden" aria-label="Select music folder">
+
+                <div id="song-title" aria-live="polite">No track loaded</div>
+                <audio id="audio-player" preload="metadata"></audio>
+                
+                <div id="playlist-container">
+                  <ul id="playlist" aria-label="Music Playlist">
+                      <!-- Playlist items will be populated here -->
+                  </ul>
+                </div>
+
+                <div id="player-controls">
+                    <button id="prev-track-button" aria-label="Previous track" disabled>Previous</button>
+                    <button id="play-pause-button" aria-label="Play music" disabled>Play</button>
+                    <button id="next-track-button" aria-label="Next track" disabled>Next</button>
+                </div>
+                <div class="volume-control-container">
+                    <label for="volume-slider" class="visually-hidden">Volume</label>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" aria-label="Volume control">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Baleada Music - AI Powered</p>
+    </footer>
+
+    <script type="module" src="index.tsx"></script>
+</body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>
